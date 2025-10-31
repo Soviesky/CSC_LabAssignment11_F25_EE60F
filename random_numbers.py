@@ -1,5 +1,5 @@
 # TODO import the library to randomly generate numbers
-
+import random
 
 def generator(n, starting, ending):
     """
@@ -14,10 +14,14 @@ def generator(n, starting, ending):
     """
 
     numbers = []
-
+    n = int(n)
+    starting = int(starting)
+    ending = int(ending)    
     # TODO: use loop to generate n random integers between starting and ending, then append the random number into the list
-
-    return numbers
+for w in range(n):
+        rand_num = random.randint(starting, ending)
+        numbers.append(rand_num)
+return numbers
 
 
 if __name__ == "__main__":

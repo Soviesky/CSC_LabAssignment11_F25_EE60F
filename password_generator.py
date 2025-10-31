@@ -20,11 +20,13 @@ def generate_password(length, use_digits, use_special):
 
     possible_characters = ""
     # TODO: concat lower_letters and upper_letters into 'possible_characters'
-
+possible_characters = lower_letters + upper_letters
     # TODO: if 'use_digits' is True, concat 'digits' to 'possible_characters'
-
+if use_digits:
+        possible_characters = possible_characters + digits
     # TODO: if 'use_special' is True, concat 'specials' to 'possible_characters'
-
+if use_special:
+        possible_characters = possible_characters + specials
     # TODO: build a list from 'possible_characters' so that each character is a list item
 
     password = ""

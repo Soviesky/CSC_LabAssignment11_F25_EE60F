@@ -21,10 +21,10 @@ def fahrenheit_to_celsius():
 def main():
     c = 36.5
     # TODO: send variable c to function celsius_to_fahrenheit(), and print it out
-
+print(f"{c}°C is {f_from_c:.2f}°F")
     f = 101.3
     # TODO: send variable f to function fahrenheit_to_celsius(), and print it out
-
+print(f"{f}°F is {c_from_f:.2f}°C")
 
 if __name__ == "__main__":
     main()
